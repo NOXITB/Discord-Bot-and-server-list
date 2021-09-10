@@ -1,0 +1,103 @@
+<%- include('../parts/head', {bot, user, path}) %>
+     <br><br>
+<div class="container">
+  <br><br>
+<div class="container contact-form">
+  <div class="contact-image">
+      <i></i>
+  </div>
+  <script>
+        $(function() {
+        var txt = $("input#botID");
+        var func = function() {
+            txt.val(txt.val().replace(/\s/g, ''));
+        }
+        txt.keyup(func).blur(func);
+    });
+  </script>
+  <%= _token %>
+  <form method="POST">
+    <input type="hidden" value="<%= _token %>" name="_token" id="_token">
+
+      <h3></h3>
+     <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                <label><i class="fad fa-fingerprint"></i> Name Which You want to add <span style="color: rgb(175, 22, 22)">*</span></label>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Dumb Bot" required="required" value="" />
+              </div>
+              <div class="form-group">
+                <label><i class="fad fa-fingerprint"></i> Bot/Server ID<span style="color: rgb(175, 22, 22)">*</span></label>
+                  <input type="text" name="bsid" id="bsid" class="form-control" placeholder="8745318642319" required="required" value="" />
+              </div>
+              <div class="form-group">
+                  <label><i class="fad fa-crown"></i> Owner ID (It is generated automatically)<span style="color: rgb(175, 22, 22)">*</span></label>
+                  <input type="text" name="ownerID" id="ownerID" class="form-control" placeholder="Bot Sahibi" value="<%= user.id %>" required="required" disabled/>
+              </div>
+          
+             
+             
+            
+            
+              
+          </div>
+         
+              
+             
+            </div>
+      </div>
+      <br><br>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+
+
+
+
+
+      <p class="text-muted">Spaces with <span style="color: rgb(175, 22, 22)">*</span> next to it are required.</p>
+    
+      <div class="g-recaptcha" data-sitekey="6LcxPN4bAAAAAARb_DJ9puGqjmwj0EREwRP1Wjn2"></div><br>
+      
+      <br/>
+    
+    
+      
+      <button type="submit" name="btnSubmit" class="btn btn-primary"><i class="fad fa-save"></i> Submit</button>
+      
+      
+    
+  </form>
+</div>
+</div>
+<br><br>
+<script>
+    var urlParams = new URLSearchParams(window.location.search);
+    if(urlParams.has('success') && urlParams.get('success')){
+    Swal.fire({
+     icon: 'success',
+     title: 'Succesfull...',
+     closeOnConfirm: false,
+     text: urlParams.get('message'),
+     footer: 'Copyright 2021  dumbbotlist.tk - All right reserved.'
+    }).then((result) => {
+  if (result.isConfirmed) {
+    window.location.href = `/`;
+  }
+})
+    }
+    if(urlParams.has('error') && urlParams.get('error')){
+    Swal.fire({
+     icon: 'error',
+     title: 'Oops...',
+     text: urlParams.get('message'),
+     footer: 'Copyright 2021  dumbbotlist.tk - All right reserved.'
+    }).then((result) => {
+  if (result.isConfirmed) {
+    window.location.href = '/addvanity';
+  }    
+})
+    }
+   </script>
+<%- include('../parts/foot') %>

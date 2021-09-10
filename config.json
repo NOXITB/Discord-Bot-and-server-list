@@ -1,0 +1,47 @@
+{
+  "webhookId": "872277743998496778",
+  "webhookToken": "_pZLfGgiEI3O1VRLdCuyDM9bJ8NvolIqh7gYqmdDMiYsD8xlc7bFPUt_qthN4JwirFNb",
+  "GUILD_ID": "847364462876033064",
+  "UNVERIFIED_ROLE": "847364865567359006",
+  "BOT_DEVELOPER_ROLE_ID": "848508081301880872",
+  "geeting_chan": "853519812029841415",
+    "mongo_url": "",
+    "server": {
+        "id": "847364462876033064",
+        "invite": "",
+        "mod_log_id": "",
+        "like_log": "",
+        "admin_user_ids": [],
+        "role_ids": {
+            "bot": "",
+            "unverified": "",
+            "verified": "",
+
+            "bot_developer": "",
+            "bot_verifier": ""
+        }
+    },
+    "bot_options": {
+        "bot_tags": [],
+        "max_bot_tags": 6,
+        "max_owners_count": 4,
+        "max_summary_length": 120,
+        "min_description_length": 200,
+        "max_description_length": 500
+    },
+    "discord_client": {
+        "id": "",
+        "secret": "",
+        "token": "",
+        "prefix": ""
+    },
+    "web": {
+        "domain_with_protocol": "https://upcord.xyz",
+        "port": 80,
+        "ratelimit": 30,
+        "recaptcha_v2": {
+            "site_key": "",
+            "secret_key": ""
+        }
+    }
+}
