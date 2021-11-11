@@ -1,20 +1,20 @@
 
         module.exports = {
             bot: {
-                token: "Nzk0MDM5ODkwNTA1MjM2NTMw.X-1BRg.WhOPJ6fhfGpoYXCrR-M3OkSU7Og",
+                token: "YOUR BOT TOKEN",
                 prefix: "u.",
                 owners: [""],
-                mongourl: "mongodb+srv://Admin:X-wing89@noxitbbot.julxx.mongodb.net/upcord?retryWrites=true&w=majority",
+                mongourl: "YOUR MONGO DB URL",
                 servers: {
-                    token: "ODU5NTk5NzIxMjM2Mzk4MTAw.YNvCoA.7nvnzw8NWj_YVQ0KPiWmkbmB89I",
+                    token: "YOUR SERVER BOT TOKE",
                     prefix: "-"
                 }
             },
         
             website: {
-                callback: "https://upcordlist.noxitb.repl.co/callback",
-                secret: "UWkMowmUfMRgQfFDi6GAatTmRuBrPQPU",
-                clientID: "794039890505236530", // Bot client id.
+                callback: "https://localhost/callback",
+                secret: "YOUR BOTS CLIENT SECRET ",
+                clientID: "", // Bot client id.
                 tags: [ "Moderation", "Fun", "Minecraft","Economy","Guard","NSFW","Anime","Invite","Music","Logging", "Web Dashboard", "Reddit", "Youtube", "Twitch", "Crypto", "Leveling", "Game", "Roleplay", "Utility", "Turkish" ],
                 languages: [
                     { flag: 'gb', code: 'en', name: 'English' },
@@ -124,8 +124,8 @@
             },
         
             server: {
-                id: "847364462876033064",
-                invite: "https://discord.gg/yWkjZUaYKe",
+                id: "SERVER ID",
+                invite: "INVITE",
                 roles: {
                     administrator: "847365325594820618",
                     moderator: "849082710398992416",
